@@ -14,12 +14,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += main.cpp \
-    eeblock.cpp \
-    eeblockchain.cpp \
-    sha256.cpp
+SOURCES += src/main.cpp \
+    src/eeblock.cpp \
+    src/eeblockchain.cpp \
+    src/sha256.cpp
 
 HEADERS += \
-    eeblock.h \
-    eeblockchain.h \
-    sha256.h
+    src/eeblock.h \
+    src/eeblockchain.h \
+    src/sha256.h
