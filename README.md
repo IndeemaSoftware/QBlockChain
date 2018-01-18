@@ -6,6 +6,7 @@ Open main.cpp to see creation of blockchain
     EEBlockChain lChain;
     
 And setting difficulty (number of zeros at beginning)
+
     lChain.setDifficulty(5);
 
 Expected output
