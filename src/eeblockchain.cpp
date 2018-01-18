@@ -5,6 +5,12 @@ EEBlockChain::EEBlockChain(QObject *parent) : QObject(parent)
     initChain();
 }
 
+EEBlockChain::~EEBlockChain()
+{
+    qDeleteAll(mChain.begin(), mChain.end());
+    mChain.clear();
+}
+
 void EEBlockChain::addBlock(EEBlock *block)
 {
     QString lPreviouseHash = "";

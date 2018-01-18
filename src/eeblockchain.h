@@ -10,6 +10,7 @@ class EEBlockChain : public QObject
     Q_OBJECT
 public:
     explicit EEBlockChain(QObject *parent = nullptr);
+    ~EEBlockChain();
 
     void addBlock(EEBlock*);
     bool isValid();
