@@ -16,10 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += src/main.cpp \
     src/eeblock.cpp \
-    src/eeblockchain.cpp \
-    src/sha256.cpp
+    src/eeblockchain.cpp
 
 HEADERS += \
     src/eeblock.h \
-    src/eeblockchain.h \
-    src/sha256.h
+    src/eeblockchain.h

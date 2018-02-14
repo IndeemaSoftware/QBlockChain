@@ -1,5 +1,4 @@
 #include "eeblock.h"
-#include "sha256.h"
 
 #include <QCryptographicHash>
 #include <QDateTime>
@@ -19,7 +18,7 @@ EEBlock::EEBlock(int index, QString data, QString previouseHash, QObject *parent
 QString EEBlock::calculateHash()
 {
     QByteArray lCode = QString().number(mIndex).toUtf8() + QString().number(mTimeStamp).toUtf8() + mData + QString().number(mNonce).toUtf8() + mPreviouseHash;
-    QByteArray lArray = QByteArray().fromStdString(sha256(lCode.toStdString()));
+    QByteArray lArray = QCryptographicHash::hash(lCode, QCryptographicHash::Sha256).toHex();
 
     return QString::fromStdString(lArray.data());
 }
