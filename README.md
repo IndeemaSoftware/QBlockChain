@@ -1,4 +1,4 @@
-# blockchain_qt
+# QBlockChain
 Building blockchain with Qt
 
 Open main.cpp to see creation of blockchain
